@@ -29,7 +29,7 @@ note<-function(p,d=duration(4),l=89,tie2next=FALSE,tie2previous=FALSE){
 #' @param x Note to be converted.
 #' @return A MusicXML string.
 #' @examples
-#' toMXL.note(note(pitch=pitch('Db5')))
+#' toMXL(note(p=pitch('Db5')))
 #' @export
 toMXL.note<-function(x){
   # define nuance - dynamics relation

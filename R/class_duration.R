@@ -34,7 +34,7 @@ duration<-function(type,dot=FALSE,triplet=FALSE,
 #' @param x Duration to be converted.
 #' @return A MXL string.
 #' @examples
-#' toMXL.duration(duration(8,dot=TRUE))
+#' toMXL(duration(8,dot=TRUE))
 #' @export
 toMXL.duration<-function(x){
   tripletStr <- paste0('<time-modification>',

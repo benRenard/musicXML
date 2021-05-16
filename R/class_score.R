@@ -30,7 +30,7 @@ score<-function(parts){
 #' m1 <- measure(number=1,notes=list(note(p=pitch('Db5'),d=duration(2)),note(p=pitch('B5'),d=duration(2))))
 #' m2 <- measure(number=2,notes=list(note(p=pitch('A5'),d=duration(2)),note(p=pitch('B5'),d=duration(2))))
 #' s <- score(list(m1,m2))
-#' toMXL.score(s)
+#' toMXL(s)
 #' @export
 toMXL.score<-function(x){
   str <- paste0('<score-partwise version="3.1">','<part-list>')

@@ -33,7 +33,7 @@ measure<-function(number,notes,beats=4,beatType=4,keySignature=0,mode='major'){
 #' @examples
 #' notes=list(note(p=pitch('Db5'),d=duration(2)),note(p=pitch('B5'),d=duration(2)))
 #' m <- measure(number=1,notes=notes)
-#' toMXL.measure(m)
+#' toMXL(m)
 #' @export
 toMXL.measure<-function(x){
   str <- paste0(

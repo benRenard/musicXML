@@ -26,7 +26,7 @@ pitch<-function(string){
 #' @param x Pitch to be converted.
 #' @return A MusicXML string.
 #' @examples
-#' toMXL.pitch(pitch('Db5'))
+#' toMXL(pitch('Db5'))
 #' @export
 toMXL.pitch<-function(x){
   str <- paste0(
