@@ -247,11 +247,10 @@ getMeasures <- function(notes,beats=4,beatType=4,mxlDivision=96,...){
 
 #*******************************************************************************
 #' Generic toMXL function
-#' @param o Object (note, measure or score)
-#' @param ... Optional arguments.
+#' @param x Object (note, measure or score)
 #' @return A MusicXML string.
 #' @export
-toMXL<-function(o,...){UseMethod("toMXL")}
+toMXL<-function(x){UseMethod("toMXL")}
 
 #*******************************************************************************
 #' writeMXL function
