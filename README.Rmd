@@ -188,7 +188,7 @@ writeMXL(s,file='WaggaWagga.xml')
 
 That's it! The dataset has been transformed into a musical score. The job of the musicXML R package stops here, but of course this does not mean that the sonification process is necessarily over: the score can be further read, played and modified using a specialized music software. 
 
-Note that data sonification is particularly interesting when it is combined with data animation, as shown in the example below based on the package [gganimate](https://gganimate.com/index.html). Note that the musicXML file has to be transformed into an audio format (such as .mp3) to achieve this. Unfortunately this is not yet implemented in this R package, but most specialized software can do it (I did it with [MuseScore](https://musescore.org)).
+Note that data sonification is particularly interesting when it is combined with data animation, as shown in the example below based on the package [gganimate](https://gganimate.com/index.html). Note that the musicXML file has to be transformed into an audio format (such as .mp3) to achieve this. Unfortunately this is not yet implemented in this R package, but most specialized software can do it (I did it with [MuseScore](https://musescore.org)). The resulting video can be seen [here](https://vimeo.com/426641144).
 
 ```{r,results='markup'}
 library(tidyr);library(gganimate)
