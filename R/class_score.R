@@ -8,8 +8,10 @@
 #' or a list of 'parts' (lists of mesures) for a multi-part score
 #' @return An object of class 'score'.
 #' @examples
-#' m1 <- measure(number=1,notes=list(note(p=pitch('Db5'),d=duration(2)),note(p=pitch('B5'),d=duration(2))))
-#' m2 <- measure(number=2,notes=list(note(p=pitch('A5'),d=duration(2)),note(p=pitch('B5'),d=duration(2))))
+#' m1 <- measure(number=1,notes=list(note(p=pitch('Db5'),d=duration(2)),
+#'                                   note(p=pitch('B5'),d=duration(2))))
+#' m2 <- measure(number=2,notes=list(note(p=pitch('A5'),d=duration(2)),
+#'                                   note(p=pitch('B5'),d=duration(2))))
 #' s <- score(list(m1,m2))
 #' @export
 score<-function(parts){
@@ -27,8 +29,10 @@ score<-function(parts){
 #' @param x score to be converted.
 #' @return A MusicXML string.
 #' @examples
-#' m1 <- measure(number=1,notes=list(note(p=pitch('Db5'),d=duration(2)),note(p=pitch('B5'),d=duration(2))))
-#' m2 <- measure(number=2,notes=list(note(p=pitch('A5'),d=duration(2)),note(p=pitch('B5'),d=duration(2))))
+#' m1 <- measure(number=1,notes=list(note(p=pitch('Db5'),d=duration(2)),
+#'                                   note(p=pitch('B5'),d=duration(2))))
+#' m2 <- measure(number=2,notes=list(note(p=pitch('A5'),d=duration(2)),
+#'                                   note(p=pitch('B5'),d=duration(2))))
 #' s <- score(list(m1,m2))
 #' toMXL(s)
 #' @export
