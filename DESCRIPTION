@@ -1,0 +1,26 @@
+Package: musicXML
+Type: Package
+Title: Tools for Sonification using musicXML
+Version: 0.1.0
+Authors@R: person("Benjamin", "Renard", email = "benjamin.renard@irstea.fr",
+    role = c("aut", "cre"))
+Description: This package provides tools to handle the musicXML format.
+    It defines several classes for basic musical objects such as note pitch,
+	note duration, note, measure and score. These objects are very similar, 
+	although not always identical, to the elements defined in the musicXML schema
+	(https://usermanuals.musicxml.com/MusicXML/Content/XS-MusicXML.htm).
+	There are also sonification utilities functions, e.g. to map 
+	data into musical attributes such as pitch, loudness or duration.
+	A typical sonification workflow hence looks like:
+	get data -> map them to musical attributes -> create and write musicXML score.
+	The resulting musicXML file can then be further processed using a specialized 
+	software (e.g. MuseScore, GuitarPro, etc.)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: xml2
+RoxygenNote: 7.1.0
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
