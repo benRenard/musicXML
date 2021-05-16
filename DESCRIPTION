@@ -15,7 +15,7 @@ Description: This package provides tools to handle the musicXML format.
 	get data -> map them to musical attributes -> create and write musicXML score.
 	The resulting musicXML file can then be further processed using a specialized 
 	software (e.g. MuseScore, GuitarPro, etc.)
-License: GPL-3
+License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: xml2
