@@ -273,7 +273,7 @@ package [gganimate](https://gganimate.com/index.html). Note that the
 musicXML file has to be transformed into an audio format (such as .mp3)
 to achieve this. Unfortunately this is not yet implemented in this R
 package, but most specialized software can do it (I did it with
-[MuseScore](https://musescore.org)).
+[MuseScore](https://musescore.org)). The resulting video can be seen [here](https://vimeo.com/426641144).
 
 ``` r
 library(tidyr);library(gganimate)
