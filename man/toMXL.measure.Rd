@@ -18,5 +18,5 @@ Convert an object of class 'measure' into the corresponding MusicXML chunk
 \examples{
 notes=list(note(p=pitch('Db5'),d=duration(2)),note(p=pitch('B5'),d=duration(2)))
 m <- measure(number=1,notes=notes)
-toMXL.measure(m)
+toMXL(m)
 }

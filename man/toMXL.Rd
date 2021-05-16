@@ -4,12 +4,10 @@
 \alias{toMXL}
 \title{Generic toMXL function}
 \usage{
-toMXL(o, ...)
+toMXL(x)
 }
 \arguments{
-\item{o}{Object (note, measure or score)}
-
-\item{...}{Optional arguments.}
+\item{x}{Object (note, measure or score)}
 }
 \value{
 A MusicXML string.

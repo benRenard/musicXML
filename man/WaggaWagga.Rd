@@ -3,7 +3,7 @@
 \docType{data}
 \name{WaggaWagga}
 \alias{WaggaWagga}
-\title{Wagga-Wagga temperatures}
+\title{Wagga-Wagga dataset}
 \format{
 An object of class \code{data.frame} with 79 rows and 3 columns.
 }

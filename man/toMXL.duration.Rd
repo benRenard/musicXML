@@ -16,5 +16,5 @@ A MXL string.
 Convert an object of class 'duration' into the corresponding MusicXML chunk
 }
 \examples{
-toMXL.duration(duration(8,dot=TRUE))
+toMXL(duration(8,dot=TRUE))
 }

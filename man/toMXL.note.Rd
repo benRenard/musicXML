@@ -16,5 +16,5 @@ A MusicXML string.
 Convert an object of class 'note' into the corresponding MusicXML chunk
 }
 \examples{
-toMXL.note(note(pitch=pitch('Db5')))
+toMXL(note(p=pitch('Db5')))
 }
