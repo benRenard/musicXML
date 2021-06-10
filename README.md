@@ -1,6 +1,8 @@
 The musicXML package
 ================
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4924680.svg)](https://doi.org/10.5281/zenodo.4924680)
+
 # Introduction
 
 [MusicXML](https://www.musicxml.com/) is a file format for representing

@@ -9,6 +9,8 @@ knitr::opts_chunk$set(echo=TRUE,results='hide',
                       fig.path = "man/figures/README-")
 ```
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4924680.svg)](https://doi.org/10.5281/zenodo.4924680)
+
 # Introduction
 [MusicXML](https://www.musicxml.com/) is a file format for representing musical scores ([Wikipedia](https://en.wikipedia.org/wiki/MusicXML)). It has become the standard format for sharing music notation in a digital form and is hence supported by [most musical notation softwares](https://www.musicxml.com/software/).
 
