@@ -15,3 +15,6 @@ A MusicXML string.
 \description{
 Generic toMXL function
 }
+\examples{
+toMXL(note(p=pitch('C5'),d=duration(1),l=107))
+}

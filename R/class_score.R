@@ -15,7 +15,7 @@
 #' s <- score(list(m1,m2))
 #' @export
 score<-function(parts){
-  if(class(parts[[1]])=='measure') {p <- list(parts)} else {p <- parts}
+  if(inherits(parts[[1]],'measure')) {p <- list(parts)} else {p <- parts}
   o<-new_score(p)
   return(validate_score(o))
 }

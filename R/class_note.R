@@ -55,8 +55,8 @@ toMXL.note<-function(x){
 #***************************************************************************----
 # internal constructor ----
 new_note<-function(p,d,l,tie2next,tie2previous){
-  stopifnot(class(p)=='pitch')
-  stopifnot(class(d)=='duration')
+  stopifnot(inherits(p,'pitch'))
+  stopifnot(inherits(d,'duration'))
   stopifnot(is.numeric(l))
   stopifnot(is.logical(tie2next))
   stopifnot(is.logical(tie2previous))

@@ -249,6 +249,8 @@ getMeasures <- function(notes,beats=4,beatType=4,mxlDivision=96,...){
 #' Generic toMXL function
 #' @param x Object (note, measure or score)
 #' @return A MusicXML string.
+#' @examples
+#' toMXL(note(p=pitch('C5'),d=duration(1),l=107))
 #' @export
 toMXL<-function(x){UseMethod("toMXL")}
 
@@ -260,6 +262,12 @@ toMXL<-function(x){UseMethod("toMXL")}
 #' @param s Score, score object to be written
 #' @param file Character, destination file
 #' @param ... additional arguments passed to method xml2::write_xml
+#' @examples
+#' m <- getMeasures(notes=getNotes(pitches=pitchMapping(x=rnorm(100))))
+#' s <- score(m)
+#' tfile= file.path(tempdir(),'myMusicXML.xml')
+#' writeMXL(s,tfile)
+#' file.remove(tfile)
 #' @export
 writeMXL<-function(s,file,...){
   mxl=toMXL(s) # score to musicXML

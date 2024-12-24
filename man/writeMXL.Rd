@@ -16,3 +16,10 @@ writeMXL(s, file, ...)
 \description{
 Write a score to a musicXML-formatted file
 }
+\examples{
+m <- getMeasures(notes=getNotes(pitches=pitchMapping(x=rnorm(100))))
+s <- score(m)
+tfile= file.path(tempdir(),'myMusicXML.xml')
+writeMXL(s,tfile)
+file.remove(tfile)
+}

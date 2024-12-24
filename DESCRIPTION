@@ -1,28 +1,31 @@
 Package: musicXML
 Type: Package
-Title: Tools for Sonification using musicXML
-Version: 0.1.0
-Authors@R: person("Benjamin", "Renard", email = "benjamin.renard@irstea.fr",
-    role = c("aut", "cre"))
-Description: This package provides tools to handle the musicXML format.
+Title: Tools for Sonification using 'musicXML'
+Version: 1.0.0
+Authors@R: c(
+    person("Benjamin", "Renard", email = "benjamin.renard@inrae.fr",role = c("aut", "cre","cph"),comment = c(ORCID = "0000-0001-8447-5430")),
+    person("INRAE", role = c("fnd")),
+    person("European Commission", role = c("fnd"),comment = c("This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 835496")))
+Description: A set of tools to handle the 'musicXML' format and facilitate data sonification.
     It defines several classes for basic musical objects such as note pitch,
 	note duration, note, measure and score. These objects are very similar, 
-	although not always identical, to the elements defined in the musicXML schema
-	(https://usermanuals.musicxml.com/MusicXML/Content/XS-MusicXML.htm).
+	although not always identical, to the elements defined in the 'musicXML' schema
+	<https://usermanuals.musicxml.com/MusicXML/Content/XS-MusicXML.htm>.
 	There are also sonification utilities functions, e.g. to map 
 	data into musical attributes such as pitch, loudness or duration.
 	A typical sonification workflow hence looks like:
-	get data -> map them to musical attributes -> create and write musicXML score.
-	The resulting musicXML file can then be further processed using a specialized 
-	software (e.g. MuseScore, GuitarPro, etc.)
-License: GPL-3 + file LICENSE
+	get data -> map them to musical attributes -> create and write 'musicXML' score.
+	The resulting 'musicXML' file can then be further processed using a specialized 
+	software (e.g. 'MuseScore', 'GuitarPro', etc.)
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports: xml2
-RoxygenNote: 7.1.0
 Suggests: 
     knitr,
     rmarkdown,
     tidyr,
-    gganimate
+    gganimate,
+    av
 VignetteBuilder: knitr
+RoxygenNote: 7.2.3
