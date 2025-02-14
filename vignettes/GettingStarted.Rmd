@@ -149,8 +149,10 @@ Data [sonification](https://en.wikipedia.org/wiki/Sonification) refers to the tr
 Consider, as an example, the Wagga Wagga dataset which comes with this package. It contains the annual precipitation and temperature time series in the city of Wagga Wagga, New South Wales, Australia, as plotted below. A possible sonification of this dataset is to map precipitation into pitch (so that wet years correspond to high-pitched notes) and temperature to loudness (so that warm years correspond to loud notes). Let's see how this can be done.
 
 ```{r}
-par(mfrow=c(2,1))
 plot(WaggaWagga$Year,WaggaWagga$Precipitation,type='l',xlab='Year',ylab='precip. [mm]')
+```
+
+```{r}
 plot(WaggaWagga$Year,WaggaWagga$Temperature,type='l',xlab='Year',ylab='temp. [C]')
 ```
 

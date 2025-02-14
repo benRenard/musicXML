@@ -164,11 +164,13 @@ precipitation into pitch (so that wet years correspond to high-pitched
 notes) and temperature to loudness (so that warm years correspond to
 loud notes). Let’s see how this can be done.
 
-    par(mfrow=c(2,1))
     plot(WaggaWagga$Year,WaggaWagga$Precipitation,type='l',xlab='Year',ylab='precip. [mm]')
-    plot(WaggaWagga$Year,WaggaWagga$Temperature,type='l',xlab='Year',ylab='temp. [C]')
 
 ![](man/figures/README-unnamed-chunk-15-1.png)
+
+    plot(WaggaWagga$Year,WaggaWagga$Temperature,type='l',xlab='Year',ylab='temp. [C]')
+
+![](man/figures/README-unnamed-chunk-16-1.png)
 
 ## Sonification of the Wagga Wagga dataset
 
@@ -184,7 +186,7 @@ not detailled here, there are options to use a nonlinear mapping, see
     # Check the relation is just a simple linear interpolation
     plot(WaggaWagga$Temperature,llist,pch=19,col=rgb(0,0,0,0.2),xlab='Temp. [C]',ylab='loudness')
 
-![](man/figures/README-unnamed-chunk-16-1.png)
+![](man/figures/README-unnamed-chunk-17-1.png)
 
 We now perform the mapping of precipitation to pitch. This is a bit
 trickier because instead of doing a continuous mapping, we want to map
