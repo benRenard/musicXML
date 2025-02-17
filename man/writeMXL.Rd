@@ -13,6 +13,9 @@ writeMXL(s, file, ...)
 
 \item{...}{additional arguments passed to method xml2::write_xml}
 }
+\value{
+No return value, called for side effects.
+}
 \description{
 Write a score to a musicXML-formatted file
 }

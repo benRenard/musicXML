@@ -262,6 +262,7 @@ toMXL<-function(x){UseMethod("toMXL")}
 #' @param s Score, score object to be written
 #' @param file Character, destination file
 #' @param ... additional arguments passed to method xml2::write_xml
+#' @return No return value, called for side effects.
 #' @examples
 #' m <- getMeasures(notes=getNotes(pitches=pitchMapping(x=rnorm(100))))
 #' s <- score(m)

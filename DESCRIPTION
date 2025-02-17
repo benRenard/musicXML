@@ -1,7 +1,7 @@
 Package: musicXML
 Type: Package
 Title: Data Sonification using 'musicXML'
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(
     person("Benjamin", "Renard", email = "benjamin.renard@inrae.fr",role = c("aut", "cre","cph"),comment = c(ORCID = "0000-0001-8447-5430")),
     person("INRAE", role = c("fnd")),
