@@ -117,19 +117,31 @@ getNotes <- function(pitches,
 #*******************************************************************************
 #' Tie notes.
 #'
-#' Add ties to successive notes having the same pitch.
+#' Add ties to successive notes having the same pitch and
+#' (optionally) the same loudness.
 #'
 #' @param notes list of notes (typically created by function getNotes)
+#' @param requireSameLoudness logical. If true only tie notes having the same pitch and loudness.
 #' @return A list of note objects.
 #' @examples
 #' n <- tieNotes(getNotes(pitches=pitchMapping(x=rnorm(100))))
 #' @export
-tieNotes <- function(notes){
+tieNotes <- function(notes,requireSameLoudness=FALSE){
   out <- notes
   n <- length(notes)
   if(n>1) {
     for(i in 1:(n-1)){
+      doIt=FALSE
       if(identical(notes[[i]]$p,notes[[i+1]]$p)){
+        if(requireSameLoudness){
+          if(notes[[i]]$l==notes[[i+1]]$l){
+            doIt=TRUE
+          }
+        } else {
+          doIt=TRUE
+        }
+      }
+      if(doIt){
         out[[i]]$tie2next=TRUE
         out[[i+1]]$tie2previous=TRUE
       }

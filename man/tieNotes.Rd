@@ -4,16 +4,19 @@
 \alias{tieNotes}
 \title{Tie notes.}
 \usage{
-tieNotes(notes)
+tieNotes(notes, requireSameLoudness = FALSE)
 }
 \arguments{
 \item{notes}{list of notes (typically created by function getNotes)}
+
+\item{requireSameLoudness}{logical. If true only tie notes having the same pitch and loudness.}
 }
 \value{
 A list of note objects.
 }
 \description{
-Add ties to successive notes having the same pitch.
+Add ties to successive notes having the same pitch and
+(optionally) the same loudness.
 }
 \examples{
 n <- tieNotes(getNotes(pitches=pitchMapping(x=rnorm(100))))
